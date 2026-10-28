@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#11131b" />
+    <meta name="description" content="Send someone a little respect." />
+    <title>respect</title>
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <main class="page">
+      <div class="topline" aria-label="A small act of appreciation">
+        <span class="topline-mark" aria-hidden="true">✳</span>
+        <span>A LITTLE GOOD GOES A LONG WAY</span>
+      </div>
+
+      <section class="card" aria-labelledby="page-title">
+        <div class="card-decoration" aria-hidden="true">
+          <span class="orbit orbit-one"></span>
+          <span class="orbit orbit-two"></span>
+          <span class="spark spark-one">✳</span>
+          <span class="spark spark-two">✳</span>
+        </div>
+
+        <div class="card-content">
+          <div class="label-chip"><span class="chip-dot"></span> A MOMENT OF APPRECIATION</div>
+          <h1 id="page-title">Give someone<br /><span>a little respect.</span></h1>
+          <p class="intro">Good people deserve to know they matter.</p>
+
+          <form id="respect-form">
+            <label for="recipient">Who are we appreciating?</label>
+            <div class="select-wrap">
+              <select id="recipient" name="recipient" required disabled>
+                <option value="">Loading people…</option>
+              </select>
+              <svg class="select-arrow" viewBox="0 0 20 20" aria-hidden="true">
+                <path d="m5 7.5 5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
+              </svg>
+            </div>
+
+            <button id="respect-button" type="submit" disabled>respect</button>
+            <p class="feedback" id="feedback" role="status" aria-live="polite">The note is a surprise.</p>
+          </form>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span class="footer-star" aria-hidden="true">✦</span>
+        <span>Thoughtful, simple, and always worth sending.</span>
+      </footer>
+    </main>
+  </body>
+</html>
